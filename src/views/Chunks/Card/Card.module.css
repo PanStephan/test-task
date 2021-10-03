@@ -1,9 +1,14 @@
-.cardScrollerOverflow {
+.cardSegment {
+    min-height: 25px;
+    margin: 15px 0;
+}
+
+.cardOverflow {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1000px;
-    min-width: 300px;
+    flex-direction: column;
+    width: 90%;
     min-height: 500px;
     background-color: var(--main-bg-color);
     border-radius: var(--border-radius);

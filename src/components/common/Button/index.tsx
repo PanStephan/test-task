@@ -1,5 +1,4 @@
 import React, { CSSProperties, FC, SyntheticEvent } from "react";
-
 import { c } from "utils/c";
 
 import css from "./Button.module.css";

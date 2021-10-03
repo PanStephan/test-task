@@ -30,15 +30,10 @@ export const data: MockData[] = [
         type: Type.test,
         question: "3",
         options: ["1", "2", "3", "4"],
-        time: 15
+        time: 5
     },
     {
         type: Type.open,
         question: "4",
-    },
-    {
-        type: Type.open,
-        question: "5",
-        img
     }
 ];

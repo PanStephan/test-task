@@ -9,17 +9,26 @@ interface CardStore {
 export const setCardData = createEvent<MockData[]>();
 export const nextCardItem = createEvent();
 
-export const CardStore = createStore<CardStore>({ itemNumber: 0 })
+export const CardData = createStore<CardStore>({ itemNumber: 0 })
     .on(setCardData, (s, p) =>
         ({ ...s, data: p }))
     .on(nextCardItem, s => ({ ...s, itemNumber: ++s.itemNumber }));
-export const CardItemStore = createStore<Partial<MockData>>({});
+export const CardItemData = createStore<Partial<MockData>>({});
+export const IsTestComplete = createStore<boolean>(false);
 
 sample({
-    source: CardStore,
+    source: CardData,
+    fn: s => {
+        return s.data?.length === s.itemNumber;
+    },
+    target: IsTestComplete
+});
+
+sample({
+    source: CardData,
     fn: s => {
         if (!s.data) return {};
         return s.data[s.itemNumber];
     },
-    target: CardItemStore
+    target: CardItemData
 });

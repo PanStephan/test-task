@@ -1,9 +1,7 @@
 import React, { CSSProperties, FC } from "react";
-
 import { c } from "utils/c";
 
 import css from "./Input.module.css";
-
 
 interface InputProps {
     label?: string

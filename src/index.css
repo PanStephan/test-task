@@ -7,10 +7,17 @@ html, body, #root {
     font-family: sans-serif;
 }
 
+li, ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 :root {
     /*colors*/
     --main-text-color: #000;
     --main-bg-color: #686dbe;
+    --main-btn-color: #bcaa4c;
 
     /*fz*/
     --heading--big: 20px;

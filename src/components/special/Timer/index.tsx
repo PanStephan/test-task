@@ -1,14 +1,18 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { CSSProperties, FC, useEffect, useState } from "react";
+
+import css from "./Timer.module.css";
 
 interface TimerProps {
     initTime: number
     setTimerEnd: () => void
+    style?: CSSProperties
 }
 
 export const Timer: FC<TimerProps> = props => {
     const {
         initTime,
-        setTimerEnd
+        setTimerEnd,
+        style
     } = props;
 
     const [
@@ -29,5 +33,7 @@ export const Timer: FC<TimerProps> = props => {
         };
     }, [time]);
 
-    return <>{ time }</>;
+    return <span className={css.timer} style={style}>
+        { time }
+    </span>;
 };

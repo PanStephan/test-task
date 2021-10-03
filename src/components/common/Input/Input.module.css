@@ -1,5 +1,6 @@
 .input {
-
+    border-radius: var(--border-radius);
+    border: 0;
 }
 
 .inputFluid {
