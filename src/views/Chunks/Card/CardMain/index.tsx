@@ -1,5 +1,5 @@
 import React, { FC } from "react";
 
-export const Card: FC = () => {
+export const CardMain: FC = () => {
     return <></>;
 };
