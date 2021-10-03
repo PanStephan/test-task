@@ -51,7 +51,8 @@ const devWebpackConfig: webpack.Configuration = webpackMerge(conf, {
               }
             },
             {
-              test: /\.(png|jpg|svg|gif)$/,
+              test: /\.(png|jpg|svg|gif|jpeg)$/,
+              type: "asset/resource",
               loader: "file-loader",
               options: {
                   name: "images/[name][contenthash].[ext]"

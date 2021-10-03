@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html, body, #root {
+    height: 100%;
+    font-family: sans-serif;
+}
+
 :root {
     /*colors*/
     --main-text-color: #000;

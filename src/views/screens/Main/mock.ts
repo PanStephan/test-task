@@ -9,7 +9,7 @@ type TruncateOptions =
     | { type: Type.open }
     | { type: Type.test; options: string[] };
 
-type MockData = {
+export type MockData = {
     question: string
     time?: number
     img?: string
@@ -19,7 +19,7 @@ export const data: MockData[] = [
     {
         type: Type.open,
         question: "1",
-        img: img
+        img
     },
     {
         type: Type.test,
@@ -30,6 +30,6 @@ export const data: MockData[] = [
         type: Type.test,
         question: "3",
         options: ["1", "2", "3", "4"],
-        time: 3600
+        time: 15
     }
 ];

@@ -8,8 +8,8 @@ interface ButtonProps {
     label?: string | React.ReactNode
     onClick?: (e: SyntheticEvent) => void
     type?: "submit" | "reset" | "button"
-    className: string
-    style: CSSProperties
+    className?: string
+    style?: CSSProperties
 }
 
 export const Button: FC<ButtonProps> = props => {
