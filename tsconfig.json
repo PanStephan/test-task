@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "rootDir": "src",
+    "rootDirs": [
+      "src",
+      "webpack"
+    ],
+    "target": "es5",
+    "module": "ESNext",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "allowJs": true,
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "jsx": "react"
+  },
+  "include": [
+    "typings.d.ts",
+    "src/**/*",
+    "webpack/**/*"
+  ],
+  "exclude": [
+    "./node_modules"
+  ]
+}

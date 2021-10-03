@@ -1,0 +1,101 @@
+{
+  "name": "webpack-p-template",
+  "version": "0.0.1",
+  "description": "webpack template written in ts",
+  "license": "EULA",
+  "private": false,
+  "dependencies": {
+    "effector": "^21.8.2",
+    "effector-react": "^21.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/plugin-syntax-jsx": "^7.12.13",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.12.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "@types/css-minimizer-webpack-plugin": "^1.1.1",
+    "@types/html-webpack-plugin": "^3.2.4",
+    "@types/mini-css-extract-plugin": "^1.2.0",
+    "@types/node": "^14.11.2",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "@types/terser-webpack-plugin": "^5.0.2",
+    "@types/webpack": "^4.41.17",
+    "@types/webpack-dev-server": "^3.11.0",
+    "@types/webpack-merge": "^4.1.5",
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "address": "^1.1.2",
+    "babel-loader": "^8.1.0",
+    "chalk": "^4.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.3.0",
+    "css-minimizer-webpack-plugin": "^1.2.0",
+    "dotenv-webpack": "^4.0.0",
+    "eslint": "^7.11.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint_d": "^10.0.2",
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^5.0.0-beta.6",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.5.4",
+    "mini-css-extract-plugin": "^1.2.0",
+    "react-refresh": "^0.9.0",
+    "react-refresh-typescript": "^1.1.1",
+    "source-map-loader": "^2.0.1",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.0.3",
+    "ts-node": "^9.0.0",
+    "tsconfig-paths": "^3.9.0",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
+    "typescript": "^4.0.3",
+    "webpack": "^5.2.0",
+    "webpack-bundle-analyzer": "^4.4.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.4.0"
+  },
+  "scripts": {
+    "build": "cross-env TS_NODE_PROJECT=\\\"webpack/tsconfig.json\\\" webpack --config webpack/webpack.prod.config.ts",
+    "start": "cross-env TS_NODE_PROJECT=\\\"webpack/tsconfig.json\\\" webpack-dev-server --config webpack/webpack.dev.config.ts",
+    "analyze": "cross-env TS_NODE_PROJECT=\\\"webpack/tsconfig.json\\\" webpack --config webpack/webpack.analyze.config.ts",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint --fix 'src/**/*.{ts,tsx}'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./src/**/*.{js,jsx,ts,tsx}": [
+      "eslint_d --fix"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

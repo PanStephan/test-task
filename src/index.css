@@ -1,0 +1,16 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+:root {
+    /*colors*/
+    --main-text-color: #000;
+
+    /*fz*/
+    --heading--big: 20px;
+    --heading--medium: 18px;
+    --heading--small: 16px;
+
+    /*vars*/
+    --defult-transition: .3s;
+}

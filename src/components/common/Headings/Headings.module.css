@@ -1,0 +1,15 @@
+.h1 {
+    font-size: var(--heading--big);
+}
+
+.h2 {
+    font-size: var(--heading--medium);
+}
+
+.h3 {
+    font-size: var(--heading--small);
+}
+
+.headings {
+    color: var(--main-text-color);
+}

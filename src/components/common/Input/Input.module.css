@@ -1,0 +1,11 @@
+.input {
+
+}
+
+.inputFluid {
+    width: 100%;
+}
+
+.label {
+    color: var(--main-text-color);
+}
