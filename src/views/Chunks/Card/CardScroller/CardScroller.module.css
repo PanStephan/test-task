@@ -1,0 +1,10 @@
+.cardScrollerOverflow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    min-width: 300px;
+    min-height: 500px;
+    background-color: var(--main-bg-color);
+    border-radius: var(--border-radius);
+}

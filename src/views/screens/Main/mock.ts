@@ -1,6 +1,6 @@
 import img from "../../../assets/imgs/first.jpeg";
 
-enum Type {
+export enum Type {
     test = "test",
     open = "open"
 }
@@ -31,5 +31,14 @@ export const data: MockData[] = [
         question: "3",
         options: ["1", "2", "3", "4"],
         time: 15
+    },
+    {
+        type: Type.open,
+        question: "4",
+    },
+    {
+        type: Type.open,
+        question: "5",
+        img
     }
 ];

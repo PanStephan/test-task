@@ -10,6 +10,7 @@ html, body, #root {
 :root {
     /*colors*/
     --main-text-color: #000;
+    --main-bg-color: #686dbe;
 
     /*fz*/
     --heading--big: 20px;
@@ -18,4 +19,5 @@ html, body, #root {
 
     /*vars*/
     --defult-transition: .3s;
+    --border-radius: 10px;
 }

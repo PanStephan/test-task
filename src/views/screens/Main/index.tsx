@@ -11,6 +11,8 @@ import styles from "./Main.module.css";
 export const Main: FC = () => {
     return <div className={styles.mainWrapper}>
         <Headings as={Headers.h1}>Test game</Headings>
-        <Card.CardMain data={data} />
+        <Card.CardScroller>
+            <Card.CardMain data={data} />
+        </Card.CardScroller>
     </div>;
 };
