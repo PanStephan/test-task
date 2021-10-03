@@ -18,9 +18,7 @@ export const IsTestComplete = createStore<boolean>(false);
 
 sample({
     source: CardData,
-    fn: s => {
-        return s.data?.length === s.itemNumber;
-    },
+    fn: s => s.data?.length === s.itemNumber,
     target: IsTestComplete
 });
 
