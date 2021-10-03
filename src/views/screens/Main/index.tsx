@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Headers, Headings } from "components/common/Headings";
-import { Card } from "views/Chunks/Card";
+import { Card } from "views/сhunks/Card";
 import { data } from "views/screens/Main/mock";
 
 import css from "./Main.module.css";

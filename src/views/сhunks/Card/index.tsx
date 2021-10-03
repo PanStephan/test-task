@@ -6,11 +6,11 @@ import {
     IsTestComplete,
     nextCardItem,
     setCardData
-} from "views/Chunks/Card/unit";
+} from "views/сhunks/Card/unit";
 import { useStore } from "effector-react";
 import { Button } from "components/common/Button";
 import { Headers, Headings } from "components/common/Headings";
-import { CardOptions } from "views/Chunks/Card/CardOptions";
+import { CardOptions } from "views/сhunks/Card/CardOptions";
 import { Input } from "components/common/Input";
 
 import css from "./Card.module.css";
